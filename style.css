@@ -1,0 +1,108 @@
+body 
+{
+    background-color: whitesmoke;
+    color: black;
+    font-family: "montserrat", sans-serif;
+    /* background-size: cover; Copre tutta la pagina 
+    background-repeat: no-repeat;  Impedisce che l'immagine si ripeta */
+    margin: 0; /* Rimuove margini predefiniti */
+    padding: 0; /* Rimuove padding predefiniti */
+}
+
+/* background-image: url('img/background.jpg'); Specifica il percorso dell'immagine */
+
+#logo
+{
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+    float: left;
+}
+
+#navbar 
+{
+    color: black;
+    font-size: 25px;
+    position: fixed;
+    background-color: lightblue;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0;
+    align-items: center;
+    line-height: 65px;
+    height: 70px;
+    text-align: center;
+}
+
+#navlinks {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#navlinks li
+{
+    list-style: none;   /* toglie i pallini */
+    display: inline-block;
+    margin-right: 200px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+#navlinks li a 
+{
+    text-decoration: none;
+}
+
+.btn
+{
+    
+    border-radius: 12px;
+    border: 0px rgb(0, 0, 0);
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before
+{
+    content:"";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: white;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn3::before
+{
+    top:0;
+    border-radius: 0 0 50% 50%;
+    height:180%;
+
+}
+
+
+.btn3:hover::before
+{
+    height: 0%;
+}
+
+
+
+/* #background 
+{
+    width: 100%;
+    height: 100vh;  Imposta l'altezza dell'immagine a coprire l'intera altezza della finestra 
+} */
+
+
